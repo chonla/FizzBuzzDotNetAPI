@@ -19,28 +19,28 @@ namespace TestSPRINT3r
 		[TestCase(2)]
 		public void ItShouldCountNormal(int value)
 		{
-			Assert.AreEqual(value.ToString(), fizzBuzz.count(value));
+			Assert.AreEqual(value.ToString(), fizzBuzz.Count(value));
 		}
 
 		[TestCase(3)]
 		[TestCase(6)]
 		public void ItShouldCountFizz(int value)
 		{
-			Assert.AreEqual("Fizz", fizzBuzz.count(value));
+			Assert.AreEqual("Fizz", fizzBuzz.Count(value));
 		}
 
 		[TestCase(5)]
 		[TestCase(10)]
 		public void ItShouldCountBuzz(int value)
 		{
-			Assert.AreEqual("Buzz", fizzBuzz.count(value));
+			Assert.AreEqual("Buzz", fizzBuzz.Count(value));
 		}
 
 		[TestCase(15)]
 		[TestCase(30)]
 		public void ItShouldCountFizzBuzz(int value)
 		{
-			Assert.AreEqual("FizzBuzz", fizzBuzz.count(value));
+			Assert.AreEqual("FizzBuzz", fizzBuzz.Count(value));
 		}
 	}
 }
