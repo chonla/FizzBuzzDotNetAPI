@@ -7,11 +7,24 @@ namespace TestSPRINT3r
 	[TestFixture()]
 	public class TestFizzBuzz
 	{
+		FizzBuzz fizzBuzz;
+
+		[SetUp]
+		public void Setup()
+		{
+			fizzBuzz = new FizzBuzz();	
+		}
+
 		[Test()]
 		public void ItShouldCount1()
 		{
-			var fizzBuzz = new FizzBuzz();
 			Assert.AreEqual("1", fizzBuzz.count(1));
+		}
+
+		[Test()]
+		public void ItShouldCount2()
+		{
+			Assert.AreEqual("2", fizzBuzz.count(2));
 		}
 	}
 }
